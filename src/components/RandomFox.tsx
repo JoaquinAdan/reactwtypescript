@@ -1,5 +1,5 @@
-type Props = { image: string; alt: string };
+type Props = { image: string };
 
 export const RandomFox = ({ image, alt }: Props): JSX.Element => {
-  return <img alt={alt} width={320} height="auto" src={image} className="rounded" />;
+  return <img width={320} height="auto" src={image} className="rounded" />;
 };
