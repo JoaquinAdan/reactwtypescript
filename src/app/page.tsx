@@ -19,12 +19,12 @@ export default function Home(): JSX.Element {
       id: generateId(),
       url: `https://randomfox.ca/images/${randomNum()}.jpg`,
     };
-    setImages([...images, newImageItem]);
+    setImages([newImageItem, ...images]);
   };
-  
+
   return (
     <main>
-      <h1 className="text-3xl font-bold underline">Hello Facu!</h1>
+      <h1 className="text-3xl font-bold underline">Hello Vitu!</h1>
       <button onClick={addNewFox}>Add new fox</button>
       {images.map(({ id, url }) => (
         <div key={id} className="p-4">
